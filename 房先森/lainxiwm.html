@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/eightteen.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+		<script src="http://api.map.baidu.com/api?v=1.4" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+	<body>
+		<header>
+			<div class="head1"><img src="img/logo.png" alt="" /></div>
+			<div class="head2">
+				联系我们
+			</div>
+			<div class="head3">
+				<div class="head3-1"><span class="iconfont icon-user"></span><p>我的</p></div>
+				<div class="head3-1"> <span class="iconfont icon-nav"></span><p>导航</p></div>
+			</div>
+		</header>
+		<div id="allmap">
+		</div>
+		<div class="nav">
+			<div class="nav1">
+				<div>
+					<img src="img/20联系我们_spec_05.jpg"/>
+				</div>
+				<p>杭州市滨江区长河街道越达巷79号连连大厦A幢301</p>
+			</div>
+			<div class="nav2">
+				<div>
+					<img src="img/20联系我们_spec_07.jpg"/>
+				</div>
+				<p>400-9977-658</p>
+			</div>
+		</div>
+		<div class="lis">
+			<div class="lis1">
+				<div>
+					<img src="img/20联系我们_spec_12.jpg"/>
+				</div>
+			</div>
+			<div class="lis2">
+				<p>长按识别二维码关注微信咨询</p>
+			</div>
+		</div>
+		
+		<!--底部底部-->
+			<!--字体-->
+		<div class="box9 boxx">
+			<div>
+				<p>
+					房先森互联网家装有别于传统公司与其他装修中介平台，以自营模式整合设计师与项目经理，杜绝项目转外包，利用
+				互联网将工地进行在线全景直播，通过去中间环节，提供装修套餐+个性化定制服务。
+				</p>
+			</div>
+		</div>
+		<div class="gray"></div>
+		<!--内容-->
+		<footer>
+			<div><p class="footer-p iconfont icon-hot-line"></p><span> &nbsp;服务热线：400-9977-658</span></div>
+			<ul>
+				<li >触屏版</li>
+				<li>电脑版</li>
+				<li>关于我们</li>
+				<li>联系我们</li>
+			</ul>
+		</footer>
+		<div class="h106"></div>
+		<div class="mb">
+			<img src="img/icon_close.png" alt="" class="img1"/>
+			<img src="img/icon_logo.png" alt="" class="img2"/>
+			<div>
+			<p class="mb-p1">装修报价，只需10秒</p>
+			<p class="mb-p2">免费为您算得装修预算</p>
+			</div>
+			<button>免费获取金币</button>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+				document.documentElement.style.fontSize = document.documentElement.clientWidth/7.5 + 'px';
+				console.log("1rem="+document.documentElement.clientWidth / 7.5 + 'px');
+		}
+		var map = new BMap.Map("allmap");    // 创建Map实例
+	    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+	    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+	    map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+	    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+
+	</script>
+</html>

@@ -1,0 +1,136 @@
+@charset "utf-8";
+*{
+    margin: 0;padding: 0;list-style: none;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.36rem;
+    align-items: center;
+    height: 1rem;
+    box-sizing: border-box;
+    padding: 0 0.18rem;
+    p{
+        margin: 0;
+        font-size: 0.36rem;
+        text-align: center;
+    }
+    span{
+        font-size: 0.45rem;
+        color: gray;
+    }
+    div{
+        text-align: center;
+        font-size: 0.3rem;
+        color: darkgray;
+        span{
+            font-size: 0.45rem;
+        }
+    }
+}
+//中间
+article{
+    width: 100%;
+    background: #202020;
+    box-sizing: border-box;
+    padding: 1rem 0 0.7rem 0;
+    .img2{
+        margin: 0.46rem 0 0.2rem 0;
+    }
+    .tex1{
+        width: 100%;
+        display: flex;
+        color: #39C893;
+        font-size: 0.28rem;
+        justify-content: space-between;
+        li{
+            width: 16%;
+//          text-align: center;
+        }
+        li:nth-of-type(6){
+            text-align: right;
+        }
+    }
+    .tex{
+        margin-top: 0.7rem;
+        font-size: 0.36rem;
+        line-height: 0.6rem;
+        box-sizing: border-box;
+        padding: 0 0.18rem;
+        color: white;
+    }
+}
+//底部
+footer{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.36rem 0.16rem;
+    font-size: 0.28rem;
+//  border-top: 0.18rem solid lightgray;
+    border-bottom: 0.18rem solid lightgray;
+    p{
+        margin: 0;
+    }
+}
+.fw{
+    width: 100%;
+    text-align: center;
+    font-size: 0.28rem;
+    padding-top: 0.36rem;
+    position: relative;
+    span{
+        font-size: 0.32rem;
+        color: #39C893;
+    }
+    .top{
+        position: absolute;
+        right: 0.3rem;
+        width: 0.94rem;
+        height: 0.94rem;
+        border: 1px solid #dedede;
+        border-radius: 50%;
+        line-height: 0.94rem;
+        background: white;
+        top: -0.5rem;
+        span{
+            font-size: 0.4rem;
+            color: #9c9c9c;
+        }
+    }
+    .for{
+        width: 100%;
+        display: flex;
+        margin-top: 0.36rem;
+        li{
+            width: 25%;
+            text-align: center;
+        }
+        li:nth-of-type(1){
+            color:#39C893 ;
+        }
+    }
+    .yy{
+        width: 100%;
+        height: 1rem;
+        text-align: center;
+        line-height: 1rem; 
+    }
+    .col{
+        width: 100%;
+        height: 1rem;
+        position: absolute;
+        text-align: center;
+        font-size: 0.36rem;
+        color: white;
+        line-height: 1rem;
+        background: #FF4351;
+        opacity: 0.8;
+        bottom: 0.47rem;
+        span{
+            font-size: 0.56rem;
+            color: white;
+        }
+    }
+}
+
